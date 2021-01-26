@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Paint</title>
+    <style>
+        #paint-area{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align: center">Choose color, size and paint!</h1>
+
+<div class="menu">
+    <p>Color select</p>
+    <select id="select-menu">
+        <option value="black">black</option>
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+    </select>
+    <p>Canvas size(x:x)</p>
+    <input type="text" placeholder="Enter x:" id="size-menu">
+    <button onclick="createPaintArea()">Create canvas</button>
+    <button onclick="clearPaintArea()">Clear canvas</button>
+
+
+</div>
+<div id="paint-area" style="width: 100%;height: auto"></div>
+<script src="script.js"></script>
+</body>
+</html>
